@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:seek_qr_reader/app/app_colors.dart';
 import 'package:seek_qr_reader/app/app_navigation.dart';
 
 import '../bloc/bloc.dart';
@@ -19,7 +20,7 @@ class SplashView extends StatelessWidget {
     }
 
     return Scaffold(
-      backgroundColor: ThemeData().colorScheme.secondary,
+      backgroundColor: AppColors.primary,
       body: Center(
         child: BlocBuilder<SplashBloc, SplashState>(
           builder: (context, state) {
@@ -30,7 +31,7 @@ class SplashView extends StatelessWidget {
             return Text(
               'SEEK',
               style: TextStyle(
-                color: ThemeData().colorScheme.onPrimary,
+                color: AppColors.inverse,
                 fontSize: 40.0,
                 fontWeight: FontWeight.w500,
                 letterSpacing: 3.2,

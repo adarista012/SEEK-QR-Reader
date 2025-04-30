@@ -4,7 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'bloc.dart';
 
 class SplashBloc extends Bloc<SplashEvent, SplashState> {
-  static const int _duration = 2;
+  static const int _duration = 1;
 
   SplashBloc() : super(SplashState(_duration)) {
     on<SplashInitTimer>((event, emit) async {
