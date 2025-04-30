@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:seek_qr_reader/app/counter/bloc/counter_bloc.dart';
-import 'package:seek_qr_reader/app/counter/bloc/counter_event.dart';
-import 'package:seek_qr_reader/app/counter/bloc/counter_state.dart';
+import 'package:seek_qr_reader/app/presentation/counter/bloc/counter_bloc.dart';
+import 'package:seek_qr_reader/app/presentation/counter/bloc/counter_event.dart';
+import 'package:seek_qr_reader/app/presentation/counter/bloc/counter_state.dart';
 
 class CounterView extends StatelessWidget {
   const CounterView({super.key});
