@@ -7,12 +7,13 @@ import 'package:seek_qr_scanner/app/presentation/home/bloc/bloc.dart';
 class HomeBloc extends Bloc<HomeEvent, HomeState> {
   final GetScannedQrsUsecase getScannedQrsUseCase;
   final AddScannedQrUsecase addScannedQrUseCase;
+
   HomeBloc(this.getScannedQrsUseCase, this.addScannedQrUseCase)
     : super(ScannedQrsInitial()) {
     on<GetScannedQrs>((event, emit) async {
       emit(ScannedQrsLoading());
       try {
-        final List<Qr> scannedQrs = await getScannedQrsUseCase();
+        final List<Qr> scannedQrs = getScannedQrsUseCase();
         emit(ScannedQrsLoaded(scannedQrs));
       } catch (e) {
         emit(HomeError('Failed to get scanned Qrs.'));
@@ -21,8 +22,8 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
 
     on<AddScannedQr>((event, emit) async {
       try {
-        addScannedQrUseCase.call(Qr(data: 'new', date: DateTime.now()));
-        final List<Qr> scannedQrs = await getScannedQrsUseCase();
+        addScannedQrUseCase.call(event.qr);
+        final List<Qr> scannedQrs = getScannedQrsUseCase();
         emit(ScannedQrsLoaded(scannedQrs));
       } catch (e) {
         emit(HomeError('Failed to get scanned Qrs.'));

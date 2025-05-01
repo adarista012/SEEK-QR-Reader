@@ -6,7 +6,5 @@ class GetScannedQrsUsecase {
 
   GetScannedQrsUsecase(this.repository);
 
-  Future<List<Qr>> call() async {
-    return await repository.getScannedQrs();
-  }
+  List<Qr> call() => repository.getScannedQrs();
 }

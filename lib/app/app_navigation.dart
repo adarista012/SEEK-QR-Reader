@@ -3,13 +3,11 @@
 import 'package:flutter/material.dart';
 
 import 'presentation/home/view/view.dart';
-import 'presentation/qr_reader/view/view.dart';
 import 'presentation/splash/view/view.dart';
 
 abstract class Routes {
   static const HOME = '/home';
   static const SPLASH = '/';
-  static const QR_READER = '/qr_reader';
 }
 
 class AppPages {
@@ -18,6 +16,5 @@ class AppPages {
   static final routes = <String, WidgetBuilder>{
     Routes.HOME: (context) => HomePage(),
     Routes.SPLASH: (context) => SplashPage(),
-    Routes.QR_READER: (context) => QrReaderPage(),
   };
 }
