@@ -1,12 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:seek_qr_scanner/app/app_colors.dart';
+import 'package:seek_qr_scanner/app/app_navigation.dart';
+import 'package:seek_qr_scanner/app/domain/entities/qr.dart';
 
 Widget cardQrReaded(
   String title,
   String message,
   DateTime date,
+  BuildContext context,
 ) => MaterialButton(
-  onPressed: () {},
+  onPressed:
+      () async => await Navigator.pushNamed(
+        context,
+        Routes.QR_SCANNED_DETAILS, //
+        arguments: Qr(data: title, date: date),
+      ),
   padding: EdgeInsets.zero,
   materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
   shape: RoundedRectangleBorder(

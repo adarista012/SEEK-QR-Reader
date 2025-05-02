@@ -48,6 +48,7 @@ class HomeView extends StatelessWidget {
                             state.scannedQrs[i].data,
                             'Sender $i',
                             state.scannedQrs[i].date,
+                            context,
                           ),
                         ),
                       ),
