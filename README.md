@@ -1,16 +1,25 @@
 # seek_qr_reader
 
-A new Flutter project.
+This is a Technical Challenge for Seek global for the mobile developer job position.
 
-## Getting Started
+# about_the_app
 
-This project is a starting point for a Flutter application.
+the next is only some features
 
-A few resources to get you started if this is your first Flutter project:
+- Clean architecture
+- Bloc pattern
+- Splash screen
+- Face recognition
+- Qr scanner
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## How to run
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+`$flutter run`
+
+## useful commands
+
+`$flutter clean`
+
+`$flutter pub get`
+
+## archives
