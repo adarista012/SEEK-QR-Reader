@@ -26,12 +26,8 @@ the next is only some features
 ## archives
 
 
-![ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/7cdad91f-95e6-49b1-ba92-4583e9674580) ![ScreenRecording_05-02-202504-55-12_1-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/a99cb95b-3603-48c6-b8da-280ad4c1b430)
+![ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/7cdad91f-95e6-49b1-ba92-4583e9674580) ![ScreenRecording_05-02-20255-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/86aa2878-7f30-485e-a51e-6c20a8527cae)
 
 
-
-![ScreenRecording_05-02-202504-55-57_1-ezgif com-speed](https://github.com/user-attachments/assets/e415059b-ebe6-47dd-9b1d-0776772708d3)
-
-![ScreenRecording_05-02-202504-57-06_1-ezgif com-speed](https://github.com/user-attachments/assets/fbfa4f8e-bced-41b8-8878-30965c19024f)
-
-
+![ScreenRecording_05-02-20256-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/3a9c6c92-22fd-4c3e-9c6e-a4e91dce4449)
+![ScreenRecording_05-02-202504-55-57_1-ezgif com-speed (1)](https://github.com/user-attachments/assets/f3f35ce1-c6c1-4dca-8e28-f6f10c9671ac)
