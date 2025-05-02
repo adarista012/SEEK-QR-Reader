@@ -10,6 +10,7 @@ the next is only some features
 - Bloc pattern
 - Splash screen
 - Face recognition
+- Secure code login
 - Qr scanner
 - Url launcher
 
