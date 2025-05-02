@@ -1,8 +1,8 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:seek_qr_scanner/app/domain/entities/qr.dart';
-import 'package:seek_qr_scanner/app/domain/usecases/add_scanned_qr_usecase.dart';
-import 'package:seek_qr_scanner/app/domain/usecases/get_scanned_qrs_usecase.dart';
-import 'package:seek_qr_scanner/app/presentation/home/bloc/bloc.dart';
+import 'package:seek_qr_reader/app/domain/entities/qr.dart';
+import 'package:seek_qr_reader/app/domain/usecases/add_scanned_qr_usecase.dart';
+import 'package:seek_qr_reader/app/domain/usecases/get_scanned_qrs_usecase.dart';
+import 'package:seek_qr_reader/app/presentation/home/bloc/bloc.dart';
 
 class HomeBloc extends Bloc<HomeEvent, HomeState> {
   final GetScannedQrsUsecase getScannedQrsUseCase;

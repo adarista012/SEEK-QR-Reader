@@ -1,4 +1,4 @@
-# seek_qr_scanner
+# seek_qr_reader
 
 A new Flutter project.
 

@@ -1,4 +1,4 @@
-import 'package:seek_qr_scanner/app/domain/entities/qr.dart';
+import 'package:seek_qr_reader/app/domain/entities/qr.dart';
 
 abstract class QrRepository {
   List<Qr> getScannedQrs();

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:seek_qr_scanner/app/app_colors.dart';
-import 'package:seek_qr_scanner/app/app_navigation.dart';
-import 'package:seek_qr_scanner/app/domain/entities/qr.dart';
+import 'package:seek_qr_reader/app/app_colors.dart';
+import 'package:seek_qr_reader/app/app_navigation.dart';
+import 'package:seek_qr_reader/app/domain/entities/qr.dart';
 
 Widget cardQrReaded(
   String title,

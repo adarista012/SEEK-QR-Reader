@@ -1,5 +1,5 @@
-import 'package:seek_qr_scanner/app/domain/entities/qr.dart';
-import 'package:seek_qr_scanner/app/domain/repositories/qr_repository.dart';
+import 'package:seek_qr_reader/app/domain/entities/qr.dart';
+import 'package:seek_qr_reader/app/domain/repositories/qr_repository.dart';
 
 class AddScannedQrUsecase {
   final QrRepository repository;

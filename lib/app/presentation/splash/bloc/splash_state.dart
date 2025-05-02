@@ -1,5 +1,17 @@
-class SplashState {
-  final int time;
+abstract class SplashState {}
 
-  SplashState(this.time);
+class SplashStateInit extends SplashState {}
+
+class SplashStateTimeOut extends SplashState {}
+
+class SplashStateBiometricAuthentication extends SplashState {
+  final bool isAuthenticated;
+
+  SplashStateBiometricAuthentication({required this.isAuthenticated});
+}
+
+class SplashStateError extends SplashState {
+  final String errorMessage;
+
+  SplashStateError({required this.errorMessage});
 }

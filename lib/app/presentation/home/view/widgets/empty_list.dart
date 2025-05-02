@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:seek_qr_scanner/app/app_colors.dart';
+import 'package:seek_qr_reader/app/app_colors.dart';
 
 Widget emptyList() => Center(
   child: Column(

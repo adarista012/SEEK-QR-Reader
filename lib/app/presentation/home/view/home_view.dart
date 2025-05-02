@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_barcode_scanner/flutter_barcode_scanner.dart';
 
-import 'package:seek_qr_scanner/app/app_colors.dart';
-import 'package:seek_qr_scanner/app/domain/entities/qr.dart';
+import 'package:seek_qr_reader/app/app_colors.dart';
+import 'package:seek_qr_reader/app/domain/entities/qr.dart';
 
-import 'package:seek_qr_scanner/app/presentation/home/view/widgets/card_qr_readed.dart';
-import 'package:seek_qr_scanner/app/presentation/home/view/widgets/empty_list.dart';
-import 'package:seek_qr_scanner/app/presentation/home/view/widgets/error_home.dart';
+import 'package:seek_qr_reader/app/presentation/home/view/widgets/card_qr_readed.dart';
+import 'package:seek_qr_reader/app/presentation/home/view/widgets/empty_list.dart';
+import 'package:seek_qr_reader/app/presentation/home/view/widgets/error_home.dart';
 
 import '../bloc/bloc.dart';
 

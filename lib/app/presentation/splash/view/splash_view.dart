@@ -2,8 +2,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:seek_qr_scanner/app/app_colors.dart';
-import 'package:seek_qr_scanner/app/app_navigation.dart';
+import 'package:seek_qr_reader/app/app_colors.dart';
+import 'package:seek_qr_reader/app/app_navigation.dart';
 
 import '../bloc/bloc.dart';
 
@@ -12,11 +12,23 @@ class SplashView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    context.read<SplashBloc>().add(SplashInitTimer());
+    final splashBloc = context.read<SplashBloc>();
+    splashBloc.add(SplashInitTimer());
 
-    void goToHomePage() async {
+    void biometricAuthentication() async {
+      splashBloc.add(SplashBiometricAuthentication());
+    }
+
+    router(bool isAuthenticated) async {
       await Future.delayed(Duration(seconds: 1));
-      await Navigator.pushReplacementNamed(context, Routes.HOME);
+      if (isAuthenticated) {
+        await Navigator.pushReplacementNamed(context, Routes.HOME);
+      } else {
+        await Navigator.pushReplacementNamed(
+          context,
+          Routes.CODE_AUTHENTICATION,
+        );
+      }
     }
 
     return Scaffold(
@@ -24,8 +36,12 @@ class SplashView extends StatelessWidget {
       body: Center(
         child: BlocBuilder<SplashBloc, SplashState>(
           builder: (context, state) {
-            if (state.time == 0) {
-              goToHomePage();
+            if (state is SplashStateTimeOut) {
+              biometricAuthentication();
+            }
+
+            if (state is SplashStateBiometricAuthentication) {
+              router(state.isAuthenticated);
             }
 
             return Text(

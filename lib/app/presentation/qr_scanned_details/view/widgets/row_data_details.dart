@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:seek_qr_scanner/app/app_colors.dart';
-import 'package:seek_qr_scanner/app/presentation/qr_scanned_details/view/widgets/snackbar_row_details.dart';
+import 'package:seek_qr_reader/app/app_colors.dart';
+import 'package:seek_qr_reader/app/presentation/qr_scanned_details/view/widgets/snackbar_row_details.dart';
 
 import '../../bloc/bloc.dart';
 

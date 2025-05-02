@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:seek_qr_scanner/app/domain/entities/qr.dart';
-import 'package:seek_qr_scanner/app/presentation/qr_scanned_details/view/widgets/row_data_details.dart';
+import 'package:seek_qr_reader/app/domain/entities/qr.dart';
+import 'package:seek_qr_reader/app/presentation/qr_scanned_details/view/widgets/row_data_details.dart';
 
 class QrScannedDetailsView extends StatelessWidget {
   const QrScannedDetailsView({super.key});
